@@ -7,11 +7,10 @@
 #include "YoungNinja.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
-YoungNinja::oungninja(String nam, Point poin){
-    this->name = nam;
-    this->loc = poin;
+YoungNinja::YoungNinja(string nam, Point poin):all_ninja(nam, poin){
+
 }
     
     

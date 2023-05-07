@@ -4,18 +4,20 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
+#include "Team.hpp"
 using namespace std;
 
 using namespace ariel;
 
 
-Team::Team(){
+Team::Team(Character *lead){
 
 }
-void Team::madd(Character * fr_team){
+void Team::add(Character * fr_team){
+
 
 }
-void Team::attack(team * other){
+void Team::attack(Team * other){
 
 }
 int Team::stillAlive(){

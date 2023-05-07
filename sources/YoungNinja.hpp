@@ -6,17 +6,17 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
-#include "all_ninja"
+#include "all_ninja.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 class YoungNinja : public all_ninja{
 
 
     public:
-        YoungNinja(String nam, Point poin);
-    }
+        YoungNinja(string nam, Point poin);
+    };
 
 
 #endif

@@ -5,17 +5,22 @@
 #include <stdexcept>
 #include <cassert>
 #include "Point.hpp"
-#include "Character"
+#include "Character.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 
 
-Character::Character(Point loca, int targ, String nam){
+Character::Character(Point loca, int targ, string nam){
     this->loc = loca;
     this-> target = targ;
     this->name = nam;
+
+}
+Character::Character( string nam ,Point loca){
+    this->loc = loca;
+    this->name = nam; 
 }
 
 Point Character::getLocation(){
@@ -25,19 +30,18 @@ Point Character::getLocation(){
 int Character::getTarget(){
     return this->target;
 }
-String Character::getName(){
+string Character::getName(){
     return this->name;
 }
 
 void Character::Set_location(Point loca){
     this->loc = loca;
 }
+
 void Character::Set_target(int tar){
     this->target = tar;
 }
-void Character::Set_name(String nam){
-    this->name = nam;
-}
+
 
 bool Character::isAlive(){
     return false;

@@ -9,7 +9,7 @@
 #include <cassert>
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 
 
@@ -24,14 +24,15 @@ class Point{
 
         double Get_X();
         double Get_Y();
-        void Set_x();
-        void Set_Y();
+        void Set_x(double x);
+        void Set_Y(double y);
 
         double distance(Point poin);
         void print(Point poin);
 
-        Point moveTowards(point start, point end, double dist);
+        Point moveTowards(Point start, Point end, double dist);
 
-}
+};
+
 
 #endif

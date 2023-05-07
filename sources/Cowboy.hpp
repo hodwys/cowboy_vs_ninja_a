@@ -9,7 +9,7 @@
 #include "Character.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 class Cowboy : public Character{
 
@@ -19,7 +19,7 @@ class Cowboy : public Character{
 
     public:
    
-        Cowboy(String nam, Point poin);
+        Cowboy(string nam, Point poin);
 
         //int bal, int count_hit
            //6        11
@@ -28,7 +28,7 @@ class Cowboy : public Character{
         bool hasboolets();
         bool reload();
 
-}
+};
 
 
 

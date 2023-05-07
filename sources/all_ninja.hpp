@@ -6,9 +6,10 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
+#include "Character.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 class all_ninja : public Character{
 
@@ -17,13 +18,13 @@ class all_ninja : public Character{
 
 
     public:
-        all_ninja(String nam, Point loca);
+        all_ninja(string nam, Point loca);
         void move(Character * malo);
         void  slash(Character * malo); 
    
 
 
-}
+};
 
 
 

@@ -1,5 +1,5 @@
-#ifndef POINT_HPP
-#define POINT_HPP
+#ifndef CHARACTER
+#define CHARACTER
 
 
 #include <iostream>
@@ -10,23 +10,25 @@
 #include "Point.hpp"
 using namespace std;
 
-using namespace ariel;
+// using namespace ariel;
 
 class Character{
 
     Point loc;
     int target; 
-    String name;
+    string name;
 
     public:
-        Character(Point loc, int target, String name);
+        Character(Point loc, int target, string name);
+        Character(string name, Point loc);
+
         Point getLocation();
         int getTarget();
-        String getName();
+        string getName();
 
-        void Set_location();
-        void Set_target();
-        void Set_name();
+        void Set_location(Point poin);
+        void Set_target(int tar);
+        //void Set_name(string nam);
 
         bool isAlive();
         double distance(Character* other);
@@ -34,6 +36,6 @@ class Character{
         void print();
         
 
-}
+};
 
 #endif

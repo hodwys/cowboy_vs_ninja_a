@@ -5,16 +5,17 @@
 #include <stdexcept>
 #include <cassert>
 #include "Character.hpp"
+#include "Cowboy.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 
-        Cowboy::Cowboy(String nam, Point poin){
-            this->name = nam;
-            this-> Point = poin;
-            this-> balls = 6;
-            this-> hit = 11;
+        Cowboy::Cowboy(string nam, Point poin):Character(nam,poin),balls(6){
+            // this->name = nam;
+            // this-> Point = poin;
+           // this-> balls = 6;
+           // this-> hit = 11;
         }
 
         //int bal, int count_hit

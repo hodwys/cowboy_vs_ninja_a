@@ -7,11 +7,11 @@
 #include "TrainedNinja.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
-TrainedNinja::TrainedNinja(String nam, Point poin){
-    this->name = nam;
-    this->loc = poin;
+TrainedNinja::TrainedNinja(string nam, Point poin):all_ninja(nam, poin){
+    // this->name = nam;
+    // this->loc = poin;
 }
     
     

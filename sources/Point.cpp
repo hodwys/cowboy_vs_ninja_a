@@ -7,7 +7,7 @@
 #include "Point.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
  
    
@@ -39,15 +39,15 @@ void Point::Set_Y(double y){
 }
 
 double Point::distance(Point poin){
-    Point temp(0,0);
-    return temp;
+    
+    return 1.1;
 }
 
 void Point::print(Point poin){
     cout<<"("<<poin.Get_X() << "," << poin.Get_Y()<<")"<<endl;
 }
 
-Point Point::moveTowards(point start, point end, double dist){
+Point Point::moveTowards(Point start, Point end, double dist){
     Point temp(0,0);
     return temp;
 }

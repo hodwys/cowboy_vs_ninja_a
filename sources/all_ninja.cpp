@@ -4,16 +4,16 @@
 #include <sstream>
 #include <stdexcept>
 #include <cassert>
-#include "all_ninja"
+#include "all_ninja.hpp"
 using namespace std;
 
-using namespace ariel;
+//using namespace ariel;
 
 
 
-all_ninja ::all_ninja(String nam, Point loca){
-    this-> name = nam;
-    this -> loc = loca;
+all_ninja ::all_ninja(string nam, Point loca): Character(nam,loca){
+    // this-> name = nam;
+    // this -> loc = loca;
 
 }
 void  all_ninja:: move(Character * malo){
