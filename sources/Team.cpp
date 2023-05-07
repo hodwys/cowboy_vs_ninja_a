@@ -9,19 +9,19 @@ using namespace std;
 using namespace ariel;
 
 
-team(){
+Team::Team(){
 
 }
-void team::madd(Character * fr_team){
+void Team::madd(Character * fr_team){
 
 }
-void team::attack(team * other){
+void Team::attack(team * other){
 
 }
-int team::stillAlive(){
+int Team::stillAlive(){
     return 1;
 }
-void print(){
+void Team::print(){
 
 }
 

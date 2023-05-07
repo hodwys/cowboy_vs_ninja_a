@@ -8,19 +8,18 @@
 #include <cassert>
 using namespace std;
 
-using namespace ariel;
+namespace ariel{
 
-class team : public Character{
-
+class Team : public Character{
 
     public:
-        team(Character *lead);
+        Team(Character *lead);
         void add(Character * fr_team);
-        void attack(team * other);
+        void attack(Team * other);
         int stillAlive();
         void print(); 
 
-
+};
 }
 
 
