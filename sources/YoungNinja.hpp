@@ -10,13 +10,15 @@
 using namespace std;
 
 //using namespace ariel;
+namespace ariel{
 
 class YoungNinja : public all_ninja{
-
+    int numofha;
 
     public:
         YoungNinja(string nam, Point poin);
-    };
 
+    };
+}
 
 #endif

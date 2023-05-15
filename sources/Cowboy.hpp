@@ -7,8 +7,10 @@
 #include <stdexcept>
 #include <cassert>
 #include "Character.hpp"
-using namespace std;
+#include "Point.hpp"
 
+using namespace std;
+namespace ariel{
 //using namespace ariel;
 
 class Cowboy : public Character{
@@ -32,7 +34,7 @@ class Cowboy : public Character{
 
 
 
-
+}
 
 
 #endif

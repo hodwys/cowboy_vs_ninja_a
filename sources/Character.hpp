@@ -9,6 +9,7 @@
 #include <cassert>
 #include "Point.hpp"
 using namespace std;
+namespace ariel{
 
 // using namespace ariel;
 
@@ -33,9 +34,9 @@ class Character{
         bool isAlive();
         double distance(Character* other);
         void hit(int count_hit);
-        void print();
+        string print();
         
 
 };
-
+}
 #endif

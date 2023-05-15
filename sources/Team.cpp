@@ -7,24 +7,25 @@
 #include "Team.hpp"
 using namespace std;
 
-using namespace ariel;
+namespace ariel{
+
+    Team::Team(Character *lead): head(lead) {
 
 
-Team::Team(Character *lead){
+    }
+    
 
+    void Team::add(Character *fr_team)
+    {
+    }
+    void Team::attack(Team * other){
+
+    }
+    int Team::stillAlive(){
+        return 0;
+    }
+    void Team::print(){
+
+    }
 }
-void Team::add(Character * fr_team){
-
-
-}
-void Team::attack(Team * other){
-
-}
-int Team::stillAlive(){
-    return 1;
-}
-void Team::print(){
-
-}
-
 

@@ -11,7 +11,7 @@ using namespace std;
 
 //using namespace ariel;
 
-
+namespace ariel{
 
 class Point{
 
@@ -20,12 +20,12 @@ class Point{
 
     public:
         Point();
-        Point(double x, double y);
+        Point(double poin_x, double poin_y);
 
         double Get_X();
         double Get_Y();
-        void Set_x(double x);
-        void Set_Y(double y);
+        void Set_x(double poin_x);
+        void Set_Y(double poin_y);
 
         double distance(Point poin);
         void print(Point poin);
@@ -33,6 +33,6 @@ class Point{
         Point moveTowards(Point start, Point end, double dist);
 
 };
-
+}
 
 #endif

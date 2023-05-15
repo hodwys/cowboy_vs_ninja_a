@@ -7,6 +7,7 @@
 #include "Character.hpp"
 #include "Cowboy.hpp"
 using namespace std;
+namespace ariel{
 
 //using namespace ariel;
 
@@ -29,3 +30,6 @@ using namespace std;
         bool Cowboy::reload(){
             return false;
         }
+        
+        
+}

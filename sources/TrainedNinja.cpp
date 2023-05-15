@@ -8,11 +8,12 @@
 using namespace std;
 
 //using namespace ariel;
-
+namespace ariel{
 TrainedNinja::TrainedNinja(string nam, Point poin):all_ninja(nam, poin){
-    // this->name = nam;
+     this->numofha= 100;
     // this->loc = poin;
 }
     
     
 
+}

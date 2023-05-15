@@ -7,20 +7,18 @@
 #include "Point.hpp"
 #include "Character.hpp"
 using namespace std;
-
 //using namespace ariel;
+namespace ariel{
 
-
-
-Character::Character(Point loca, int targ, string nam){
-    this->loc = loca;
-    this-> target = targ;
-    this->name = nam;
+Character::Character(Point loca, int targ, string nam) : loc(loca),target(targ),name(nam)  {
+    // this->loc = loca;
+    // this-> target = targ;
+    // this->name = nam;
 
 }
-Character::Character( string nam ,Point loca){
-    this->loc = loca;
-    this->name = nam; 
+Character::Character( string nam ,Point loca) : loc(loca), name(nam){
+    // this->loc = loca;
+    // this->name = nam; 
 }
 
 Point Character::getLocation(){
@@ -52,7 +50,9 @@ double Character:: distance(Character* other){
 void Character::hit(int count_hit){
     cout<<"hit funtion"<< endl;
 }
-void Character::print(){
-    cout <<"print function"<< endl;
+string Character::print(){
+    string s ="print function";
+    return s;
 }
 
+}

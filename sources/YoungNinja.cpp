@@ -8,10 +8,13 @@
 using namespace std;
 
 //using namespace ariel;
+namespace ariel{
 
 YoungNinja::YoungNinja(string nam, Point poin):all_ninja(nam, poin){
+this->numofha=100;
+
 
 }
     
     
-
+}

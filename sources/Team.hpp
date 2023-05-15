@@ -21,6 +21,8 @@ namespace ariel{
 
 class Team{
 
+    Character* head;
+
     public:
         Team(Character *lead);
         void add(Character * fr_team);

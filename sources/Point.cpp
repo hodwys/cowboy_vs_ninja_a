@@ -8,7 +8,7 @@
 using namespace std;
 
 //using namespace ariel;
-
+namespace ariel{
  
    
 Point::Point(){
@@ -16,9 +16,9 @@ Point::Point(){
     this->Y = 0;
 }
 
-Point::Point(double x, double y){
-this->X = x;
-this->Y = y;
+Point::Point(double poin_x, double poin_y) : X(poin_x), Y(poin_y){
+// this->X = poin_x;
+// this->Y = poin_y;
 }
 
 
@@ -30,17 +30,17 @@ double Point::Get_Y(){
     return this->Y;
 }
 
-void Point::Set_x(double x){
-    this->X=x;
+void Point::Set_x(double poin_x){
+    this->X=poin_x;
 }
 
-void Point::Set_Y(double y){
-    this->Y =y;
+void Point::Set_Y(double poin_y){
+    this->Y =poin_y;
 }
 
 double Point::distance(Point poin){
     
-    return 1.1;
+    return 0;
 }
 
 void Point::print(Point poin){
@@ -52,3 +52,4 @@ Point Point::moveTowards(Point start, Point end, double dist){
     return temp;
 }
 
+}
