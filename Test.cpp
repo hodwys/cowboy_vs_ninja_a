@@ -97,6 +97,7 @@ TEST_CASE("Cowboy shoot"){
     CHECK_THROWS(C.shoot(&b));
     CHECK_FALSE(b.isAlive());
 }
+
 TEST_CASE("Cowboy hasboolets"){
 
     TrainedNinja b("Adi", Point(1,0));
@@ -116,32 +117,24 @@ TEST_CASE("Cowboy hasboolets"){
     CHECK_THROWS(C.shoot(&b));
 
 }
-// allNinja fuction
-
-// TEST_CASE("allNinja fuction"){
 
 
-// }
-
-
-// Char fuction
-
-TEST_CASE("Character fuction"){
+TEST_CASE("Character and loction fuction"){
     YoungNinja b("Matan",Point(0,1));
-   // TrainedNinja
     Cowboy d("adi", Point(3,4));
 
     Point loc = b.getLocation();
     Point loc2 = d.getLocation();
-    CHECK_EQ(loc.Get_X(), loc2.Get_X());
-    CHECK_EQ(loc.Get_Y(), loc2.Get_Y());
+
+    CHECK_NE(loc.Get_X(), loc2.Get_X());
+    CHECK_NE(loc.Get_Y(), loc2.Get_Y());
     double dis = loc.distance(d.getLocation());
     b.move(&d);
 
 
     double dis_b = loc.distance(b.getLocation());
-    int speed = b.get_speed();
-    CHECK(int(dis_b+0.9)<= speed);
+    double speed = (b.get_speed()+0.0);
+    CHECK(dis_b<= speed);
 
 
 
@@ -159,30 +152,8 @@ TEST_CASE("Character fuction"){
     while(dis2 !=0){ 
         b.move(&d);
 
-        dis2= b.getLocation().distance( d.getLocation()); 
-     }//18
+        dis2= b.getLocation().distance(d.getLocation()); 
+     }
      CHECK_EQ(dis2,0);
-
 }
-
-
-
-
-
-     // Character(Point loc, int target, string name);
-        // Character(string name, Point loc);
-
-        // Point getLocation();
-        // int getTarget();
-        // string getName();
-
-        // void Set_location(Point poin);
-        // void Set_target(int tar);
-        // //void Set_name(string nam);
-
-        // bool isAlive();
-        // double distance(Character* other);
-        // void hit(int count_hit);
-        // string print();
-
 };
